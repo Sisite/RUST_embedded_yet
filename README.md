@@ -1,1 +1,3 @@
-# Course in embedded systems using RUST
+## RUST - Are we embedded yet?
+
+#### Course given at Luleå Tekniska Universitet on embedded systems using RUST
