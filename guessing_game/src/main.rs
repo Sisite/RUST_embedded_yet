@@ -26,6 +26,7 @@ fn main() {
                 Ordering::Greater => println!("Too big!"),
                 Ordering::Equal => {
                     println!("You win!");
+                    victory_happend(vector_pair.clone());
                     victory_happend(vector_pair);
                     break;
             }
