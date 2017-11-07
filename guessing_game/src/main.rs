@@ -26,7 +26,6 @@ fn main() {
                 Ordering::Greater => println!("Too big!"),
                 Ordering::Equal => {
                     println!("You win!");
-                    victory_happend(vector_pair.clone());
                     victory_happend(vector_pair);
                     break;
             }
@@ -35,7 +34,7 @@ fn main() {
 
 }
 fn victory_happend(vector_pair :Vec<(u32, String)>) ->(){
-    for x in vector_pair.iter() {
+    for x in vector_pair.iter().rev().take(3) {
         println!("Count: {}, Guess: {}", x.0, x.1);
         //println!("Guess: {}", x.1);
     }
