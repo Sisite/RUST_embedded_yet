@@ -5,14 +5,18 @@
     "tasks": [
         {
             "type": "shell",
-            "taskName": "cargo build",
+            "taskName": "cargo run",
             "command": "cargo",
             "args": [
-                "build"
+                "run"
             ],
             "problemMatcher": [
                 "$rustc"
-            ]
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         },
         {
             "type": "shell",
@@ -34,11 +38,7 @@
             ],
             "problemMatcher": [
                 "$rustc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            ]
         },
         {
             "type": "shell",
